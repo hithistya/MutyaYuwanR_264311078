@@ -1,4 +1,4 @@
---- Create Tabel pengguna ---
+---Create Tabel pengguna---
 CREATE TABLE pengguna (
     id_pengguna    INT AUTO_INCREMENT PRIMARY KEY,
     nama_pengguna  VARCHAR(100) NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE pengguna (
     no_telp        VARCHAR(13)
 );
 
---- Create Tabel Zona_lahan ---
+---Create Tabel Zona_lahan---
 CREATE TABLE zona_lahan (
     id_zona        INT AUTO_INCREMENT PRIMARY KEY,
     nama_zona      VARCHAR(100) NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE zona_lahan (
     jenis_tanaman  VARCHAR(100)
 );
 
---- Create Tabel Laporan ---
+---Create Tabel Laporan---
 CREATE TABLE laporan (
     id_laporan       INT AUTO_INCREMENT PRIMARY KEY,
     id_zona          INT NOT NULL,
