@@ -1,8 +1,8 @@
 ---Tabel pengguna---
 INSERT INTO pengguna (id_pengguna, nama_pengguna, username, password, role, email, no_telp) VALUES
-(1, 'Budi', 'budi123', 'budi123', 'Admin_Sistem', 'budi@mail.com', '081234567890'),
-(2, 'Anis', 'anis123', 'anis123', 'Petugas_Lapangan', 'anis@mail.com', '081298765432'),
-(3, 'Dewi', 'dewi123', 'dewi123', 'Koordinator', 'dewi@mail.com', '081355511122');
+(1, 'Andy', 'andy', 'andy1234', 'Admin_Sistem', 'andy@mail.com', '081234567890'),
+(2, 'Rendy', 'rendy', 'rendy1234', 'Petugas_Lapangan', 'rendy@mail.com', '081298765432'),
+(3, 'Diki', 'diki', 'diki1234', 'Koordinator', 'diki@mail.com', '081355511122');
 
 ---Tabel zona_lahan---
 INSERT INTO zona_lahan (id_zona, nama_zona, luas_lahan, jenis_tanaman) VALUES
