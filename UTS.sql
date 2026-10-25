@@ -47,7 +47,7 @@ CREATE TABLE `jenis_sensor` (
   PRIMARY KEY (`id_jenis`),
   UNIQUE KEY `uq_nama_jenis` (`nama_jenis`),
   CONSTRAINT `chk_ambang_batas` CHECK (`nilai_min` < `nilai_max`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) 
  
 -- Tabel sensor (struktur baru)
 CREATE TABLE `sensor` (
@@ -65,7 +65,7 @@ CREATE TABLE `sensor` (
   CONSTRAINT `fk_sensor_jenis` FOREIGN KEY (`id_jenis`)
     REFERENCES `jenis_sensor` (`id_jenis`) ON DELETE RESTRICT ON UPDATE CASCADE,
   CONSTRAINT `chk_status_sensor` CHECK (`status_sensor` IN ('Aktif','Perawatan','Nonaktif'))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) 
  
 -- ---------------------------------------------------------------------
 -- D. DATA
