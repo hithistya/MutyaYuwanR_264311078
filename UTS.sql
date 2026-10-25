@@ -44,8 +44,6 @@ CREATE TABLE `jenis_sensor` (
   `satuan`     varchar(20) NOT NULL,
   `nilai_min`  decimal(10,2) NOT NULL,
   `nilai_max`  decimal(10,2) NOT NULL,
-  PRIMARY KEY (`id_jenis`),
-  UNIQUE KEY `uq_nama_jenis` (`nama_jenis`),
   CONSTRAINT `chk_ambang_batas` CHECK (`nilai_min` < `nilai_max`)
 ) 
  
